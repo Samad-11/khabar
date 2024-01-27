@@ -1,16 +1,17 @@
 "use client"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React, { FormEvent, useEffect, useState } from 'react'
 
 const Navbar = () => {
     let pathname = usePathname();
     const [search, setSearch] = useState('')
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         setSearch(e.target.value)
     }
-    const clearSearch = (e) => {
+
+    const clearSearch = (e: any) => {
         setSearch("");
     }
     useEffect(() => {

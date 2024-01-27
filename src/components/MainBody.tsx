@@ -1,7 +1,13 @@
 import React from 'react'
 import NewsCard from './NewsCard'
 
-const MainBody = ({ news, heading }) => {
+
+interface Props {
+    news: object[],
+    heading: string
+}
+
+const MainBody = ({ news, heading }: Props) => {
     return (
         <div className="row">
             <div className="col-12">

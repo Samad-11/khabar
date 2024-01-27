@@ -1,10 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 
-const NewsCard = ({ key, title, image_url, description, category, }) => {
+interface Props {
+    key: string,
+    title: string,
+    image_url: string,
+    description: string,
+    category: string,
+}
+
+const NewsCard = ({ key, title, image_url, description, category, }: Props) => {
 
     return (
-        <div className="card mx-auto my-2   " style={{ width: '18rem' }}>
+        <div className="card mx-auto my-2" style={{ width: '18rem' }}>
             <img src={image_url} alt={key} className="card-img-top" />
             <div className="card-body position-relative">
                 <h5 className="card-title fw-semibold fs-6">{title}</h5>
