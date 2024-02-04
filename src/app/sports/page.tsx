@@ -29,7 +29,7 @@ const page = async () => {
 
     return (
         <>
-            <MainBody news={news} heading={"Trending News"} />
+            <MainBody news={news} heading={"Sport News"} />
         </>
     )
 }
