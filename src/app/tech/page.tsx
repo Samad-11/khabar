@@ -22,7 +22,7 @@ const page = async () => {
     let news: object[] = await data.articles;
 
     return (
-        <MainBody news={data.articles} heading={"Trending News"} />
+        <MainBody news={data.articles} heading={"Technology"} />
     )
 }
 
